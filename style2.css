@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+	
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #16384c;
+	font-family: 'Gugi', cursive;
+margin: 0;
+	padding: 0;
+	
+}
+
+.title{
+	width: 100%;
+	margin-left: 32.5%;
+
+}
+
+.rogo{
+	margin-right: 90%;
+	position: absolute;
+}
+
+.rogo2{
+	margin-left: 90%;
+	position: absolute;
+}
+
+
+.container{
+	position: relative;
+	width: 1800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+
+}
+
+.container .card{
+	position: relative;
+	max-width: 300px;
+	height: 440px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+	border-radius: 8px;
+}
+
+.container .card:hover{
+	height: 550px;
+}
+
+.container .care .imgBx{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.container .care .imgBx img{
+	max-width: 100%;
+	border-radius: 4px;
+
+}
+
+.container .card .content{
+	position: relative;
+	margin-top: -50px;
+	padding: 25px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out
+}
+
+.container .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
